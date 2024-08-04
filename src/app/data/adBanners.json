@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Cab Service",
+      "description": "Welcome to our cab serviec this is our banner",
+      "cta": "View",
+      "image": "/images/logoimages/cabService_image.jpg",
+      "background":"/images/backgroundimages/blueLined_bgImage.jpg"
+    },
+    {
+      "title": "The Barber",
+      "description": "This is the banner for The Barber",
+      "cta": "View",
+      "image": "/images/logoimages/barber shop image.jpeg",
+       "background":"/images/backgroundimages/banagn_white_bgimage.jpeg"
+    },
+    {
+      "title": "SPA Resort",
+      "description": "Welcome to our SPA Resort this is our banner",
+      "cta": "View",
+      "image": "/images/logoimages/golden-spa-resort-logo-khg8hd.jpg",
+      "background":"/images/backgroundimages/white_blue_and_someelseblue_bgimage.webp"
+    },
+    {
+      "title": "Master Chef",
+      "description": "This is the banner for Master Chef",
+      "cta": "View",
+      "image": "/images/logoimages/master cheif image.webp",
+       "background":"/images/backgroundimages/sky_blue_white_bgimage.jpeg"
+    },
+    {
+      "title": "Mountain Trekking",
+      "description": "This is the banner for Mountain Trekking",
+      "cta": "View",
+      "image": "/images/logoimages/mountain tekking.jpeg",
+       "background":"/images/backgroundimages/PinkWhiteBlue_bgimage.jpeg"
+    }
+  ]
+  
