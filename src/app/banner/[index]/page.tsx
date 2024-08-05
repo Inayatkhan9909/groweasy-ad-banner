@@ -4,7 +4,8 @@ import { useParams } from 'next/navigation';
 import EditBannerTemplate from '../../components/EditBannerTemplateBs';
 import adBanners from '../../data/adBanners.json';
 import { Banner } from '../../types';
-import BannerDetail from '../page';
+import { BannerDetail } from '../page';
+
 
 const BannerPage: React.FC = () => {
   const params = useParams();
@@ -28,6 +29,7 @@ const BannerPage: React.FC = () => {
     <>
       {banner && (
         <>
+     
           <BannerDetail banner={banner} onEdit={() => setEdit(true)} />
           {edit && (
             <EditBannerTemplate
