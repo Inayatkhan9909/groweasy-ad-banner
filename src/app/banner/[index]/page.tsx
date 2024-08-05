@@ -28,7 +28,6 @@ const BannerPage: React.FC = () => {
     <>
       {banner && (
         <>
-
           <BannerDetail banner={banner} onEdit={() => setEdit(true)} />
           {edit && (
             <EditBannerTemplate
