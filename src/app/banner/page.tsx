@@ -10,7 +10,7 @@ export interface BannerDetailProps {
   onEdit: () => void;
 }
 
- const BannerDetail: React.FC<BannerDetailProps> = ({ banner, onEdit }) => {
+const BannerDetail: React.FC<BannerDetailProps> = ({ banner, onEdit }) => {
   const bannerRef = useRef<HTMLDivElement>(null);
 
   const handleDownload = () => {
@@ -57,21 +57,19 @@ export interface BannerDetailProps {
           }}
           onClick={onEdit}
         />
-        <Typography variant="h4" className="mb-6">{banner ? banner.title : "No banner found"}</Typography>
-        {banner && (
-          <img
-            src={banner.image}
-            alt={banner.title}
-            style={{
-              maxHeight: '400px',
-              width: '100%',
-              objectFit: 'contain',
-              marginBottom: '20px',
-              borderRadius: '8px'
-            }}
-          />
-        )}
-        {banner && <Typography variant="body1" sx={{ marginBottom: '20px' }}>{banner.description}</Typography>}
+        <Typography variant="h4" className="mb-6">{banner.title}</Typography>
+        <img
+          src={banner.image}
+          alt={banner.title}
+          style={{
+            maxHeight: '400px',
+            width: '100%',
+            objectFit: 'contain',
+            marginBottom: '20px',
+            borderRadius: '8px'
+          }}
+        />
+        <Typography variant="body1" sx={{ marginBottom: '20px' }}>{banner.description}</Typography>
         <Box className="flex justify-center mt-4">
           <Button id="download-button" variant="contained" color="primary" onClick={handleDownload}>
             Download
@@ -82,4 +80,4 @@ export interface BannerDetailProps {
   );
 };
 
- export default BannerDetail;
+export default BannerDetail;

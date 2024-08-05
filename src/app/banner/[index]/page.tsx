@@ -4,17 +4,16 @@ import { useParams } from 'next/navigation';
 import EditBannerTemplate from '../../components/EditBannerTemplateBs';
 import adBanners from '../../data/adBanners.json';
 import { Banner } from '../../types';
-import  BannerDetail  from '../page';
+import BannerDetail from '../page';
 
-
- const BannerPage: React.FC = () => {
+const BannerPage: React.FC = () => {
   const params = useParams();
   const index = params.index as string | null;
   const [banner, setBanner] = useState<Banner | null>(null);
   const [edit, setEdit] = useState<boolean>(false);
 
   useEffect(() => {
-    if (index !== undefined) {
+    if (index !== null) {
       setBanner(adBanners[Number(index)]);
     }
   }, [index]);
@@ -29,7 +28,6 @@ import  BannerDetail  from '../page';
     <>
       {banner && (
         <>
-     
           <BannerDetail banner={banner} onEdit={() => setEdit(true)} />
           {edit && (
             <EditBannerTemplate
