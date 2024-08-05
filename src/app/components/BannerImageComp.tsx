@@ -10,14 +10,14 @@ interface BannerProps extends Banner {
 
 const BannerImageComp: React.FC<BannerProps> = ({ title, description, cta, image, background, onEdit, onView }) => {
   return (
-    <Box 
-      sx={{ 
-        position: 'relative', 
-        padding: '20px', 
-        background: `url(${background}) no-repeat center/cover`, 
-        borderRadius: '8px', 
+    <Box
+      sx={{
+        position: 'relative',
+        padding: '20px',
+        background: `url(${background}) no-repeat center/cover`,
+        borderRadius: '8px',
         border: '2px solid #ccc',
-        color: 'white' 
+        color: 'white'
       }}
     >
       <Typography variant="h4">{title}</Typography>

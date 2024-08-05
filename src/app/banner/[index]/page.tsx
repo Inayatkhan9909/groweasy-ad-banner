@@ -1,7 +1,7 @@
- "use client"
+"use client"
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import BannerDetail from '../../components/BannerDetails';
+import BannerDetail from '../page';
 import EditBannerTemplate from '../../components/EditBannerTemplateBs';
 import adBanners from '../../data/adBanners.json';
 import { Banner } from '../../types';

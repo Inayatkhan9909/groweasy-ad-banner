@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import BannerImageComp from './components/BannerImageComp';
 import EditBannerTemplate from './components/EditBannerTemplateBs';
 import adBanners from './data/adBanners.json';
@@ -27,9 +27,9 @@ const Home: React.FC = () => {
   };
 
   return (
-    
+
     <Box className=" m-0 w-screen bg-[url('/images/HomeBackground.jpeg')]">
-      <Box sx={{padding:'20px', display: 'grid', gap: 2, gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
+      <Box sx={{ padding: '20px', display: 'grid', gap: 2, gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))' }}>
         {banners.map((banner, index) => (
           <BannerImageComp key={index} {...banner} onEdit={() => handleEdit(index)} onView={() => handleView(index)} />
         ))}
