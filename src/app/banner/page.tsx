@@ -5,7 +5,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import html2canvas from 'html2canvas';
 import { Banner } from '../types';
 
-interface BannerDetailProps {
+export interface BannerDetailProps {
   banner: Banner;
   onEdit: () => void;
 }

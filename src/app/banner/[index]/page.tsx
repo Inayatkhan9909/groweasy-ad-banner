@@ -7,9 +7,9 @@ import { Banner } from '../../types';
 import { BannerDetail } from '../page';
 
 
-const BannerPage: React.FC = () => {
+export const BannerPage: React.FC = () => {
   const params = useParams();
-  const index = params.index as string;
+  const index = params.index as string | null;
   const [banner, setBanner] = useState<Banner | null>(null);
   const [edit, setEdit] = useState<boolean>(false);
 
@@ -45,4 +45,4 @@ const BannerPage: React.FC = () => {
   );
 };
 
-export default BannerPage;
+// export default BannerPage;
