@@ -10,7 +10,7 @@ export interface BannerDetailProps {
   onEdit: () => void;
 }
 
-export const BannerDetail: React.FC<BannerDetailProps> = ({ banner, onEdit }) => {
+ const BannerDetail: React.FC<BannerDetailProps> = ({ banner, onEdit }) => {
   const bannerRef = useRef<HTMLDivElement>(null);
 
   const handleDownload = () => {
@@ -82,4 +82,4 @@ export const BannerDetail: React.FC<BannerDetailProps> = ({ banner, onEdit }) =>
   );
 };
 
-// export default BannerDetail;
+ export default BannerDetail;

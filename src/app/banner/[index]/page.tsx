@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import EditBannerTemplate from '../../components/EditBannerTemplateBs';
 import adBanners from '../../data/adBanners.json';
 import { Banner } from '../../types';
-import { BannerDetail } from '../page';
+import  BannerDetail  from '../page';
 
 
  const BannerPage: React.FC = () => {
