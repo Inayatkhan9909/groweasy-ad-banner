@@ -1,10 +1,12 @@
 "use client"
+// src/app/banner/[index]/page.tsx
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import EditBannerTemplate from '../../components/EditBannerTemplateBs';
 import adBanners from '../../data/adBanners.json';
 import { Banner } from '../../types';
-import BannerDetail from '../page';
+import BannerDetail from '../../components/BannerDetail'; 
 
 const BannerPage: React.FC = () => {
   const params = useParams();
@@ -44,3 +46,4 @@ const BannerPage: React.FC = () => {
 };
 
 export default BannerPage;
+
