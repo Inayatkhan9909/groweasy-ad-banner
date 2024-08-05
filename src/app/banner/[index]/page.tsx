@@ -8,7 +8,7 @@ import { Banner } from '../../types';
 
 const BannerPage = () => {
   const params = useParams();
-  const index = params.index;
+  const index = params.index as string;
   const [banner, setBanner] = useState<Banner | null>(null);
   const [edit, setEdit] = useState<boolean>(false);
 
